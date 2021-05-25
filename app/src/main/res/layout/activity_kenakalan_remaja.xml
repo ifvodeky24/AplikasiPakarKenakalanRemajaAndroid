@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".KenakalanRemajaActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:text="@string/jenis_jenis_kenakalan"
+        android:textColor="@android:color/black"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="16dp"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/ic_narkoba"
+            app:civ_border_color="#FF000000"
+            app:civ_border_width="2dp" />
+
+        <Button
+            android:id="@+id/btn_narkoba"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/narkoba" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="16dp"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/ic_balap_liar"
+            app:civ_border_color="#FF000000"
+            app:civ_border_width="2dp" />
+
+        <Button
+            android:id="@+id/btn_balap_liar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/balap_liar" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="16dp"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/ic_pencuri"
+            app:civ_border_color="#FF000000"
+            app:civ_border_width="2dp" />
+
+        <Button
+            android:id="@+id/btn_pencuri"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/pencuri" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="16dp"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/ic_seks_bebas"
+            app:civ_border_color="#FF000000"
+            app:civ_border_width="2dp" />
+
+        <Button
+            android:id="@+id/btn_seks_bebas"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/seks_bebas" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="16dp"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/ic_merokok"
+            app:civ_border_color="#FF000000"
+            app:civ_border_width="2dp" />
+
+        <Button
+            android:id="@+id/btn_merokok"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/merokok" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="16dp"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/ic_kelahi"
+            app:civ_border_color="#FF000000"
+            app:civ_border_width="2dp" />
+
+        <Button
+            android:id="@+id/btn_perkelahian_remaja"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/perkelahian_remaja" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="16dp"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/ic_geng_motor"
+            app:civ_border_color="#FF000000"
+            app:civ_border_width="2dp" />
+
+        <Button
+            android:id="@+id/btn_geng_motor"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/geng_motor" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="16dp"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/ic_mabuk"
+            app:civ_border_color="#FF000000"
+            app:civ_border_width="2dp" />
+
+        <Button
+            android:id="@+id/btn_mabuk_mabukan"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/mabuk_mabukan" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="16dp"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/ic_bully"
+            app:civ_border_color="#FF000000"
+            app:civ_border_width="2dp" />
+
+        <Button
+            android:id="@+id/btn_bullying"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/bullying" />
+
+    </LinearLayout>
+
+</LinearLayout>
