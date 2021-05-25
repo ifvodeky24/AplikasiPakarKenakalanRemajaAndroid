@@ -1,11 +1,10 @@
 package com.gaidz.aplikasipakarkenakalanremaja;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class KenakalanRemajaActivity extends AppCompatActivity {
     private Button btnNarkoba;
@@ -34,40 +33,57 @@ public class KenakalanRemajaActivity extends AppCompatActivity {
         btnBullying = findViewById(R.id.btn_bullying);
 
         btnNarkoba.setOnClickListener(view -> {
-                Intent intent = new Intent(this, DetailKenakalanRemajaActivity.class);
-                startActivity(intent);
+            Intent intent = new Intent(this, DetailKenakalanRemajaActivity.class);
+            intent.putExtra(DetailKenakalanRemajaActivity.ID, "0");
+            startActivity(intent);
         });
 
         btnBalapLiar.setOnClickListener(view -> {
-
+            Intent intent = new Intent(this, DetailKenakalanRemajaActivity.class);
+            intent.putExtra(DetailKenakalanRemajaActivity.ID, "1");
+            startActivity(intent);
         });
 
         btnPencuri.setOnClickListener(view -> {
-
+            Intent intent = new Intent(this, DetailKenakalanRemajaActivity.class);
+            intent.putExtra(DetailKenakalanRemajaActivity.ID, "2");
+            startActivity(intent);
         });
 
         btnSeksBebas.setOnClickListener(view -> {
-
+            Intent intent = new Intent(this, DetailKenakalanRemajaActivity.class);
+            intent.putExtra(DetailKenakalanRemajaActivity.ID, "3");
+            startActivity(intent);
         });
 
         btnMerokok.setOnClickListener(view -> {
-
+            Intent intent = new Intent(this, DetailKenakalanRemajaActivity.class);
+            intent.putExtra(DetailKenakalanRemajaActivity.ID, "4");
+            startActivity(intent);
         });
 
         btnPerkelahian.setOnClickListener(view -> {
-
+            Intent intent = new Intent(this, DetailKenakalanRemajaActivity.class);
+            intent.putExtra(DetailKenakalanRemajaActivity.ID, "5");
+            startActivity(intent);
         });
 
         btnGengMotor.setOnClickListener(view -> {
-
+            Intent intent = new Intent(this, DetailKenakalanRemajaActivity.class);
+            intent.putExtra(DetailKenakalanRemajaActivity.ID, "6");
+            startActivity(intent);
         });
 
         btnMabuk.setOnClickListener(view -> {
-
+            Intent intent = new Intent(this, DetailKenakalanRemajaActivity.class);
+            intent.putExtra(DetailKenakalanRemajaActivity.ID, "7");
+            startActivity(intent);
         });
 
         btnBullying.setOnClickListener(view -> {
-
+            Intent intent = new Intent(this, DetailKenakalanRemajaActivity.class);
+            intent.putExtra(DetailKenakalanRemajaActivity.ID, "8");
+            startActivity(intent);
         });
     }
 }

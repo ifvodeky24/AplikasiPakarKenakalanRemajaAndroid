@@ -7,6 +7,8 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
+
 import java.util.ArrayList;
 
 public class DetailKenakalanRemajaActivity extends AppCompatActivity {
@@ -17,6 +19,7 @@ public class DetailKenakalanRemajaActivity extends AppCompatActivity {
     private ArrayList<DataKenakalanRemaja> dataKenakalanRemajaArrayList = new ArrayList<>();;
 
     public static final String ID = "id";
+    private String id;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,9 +30,18 @@ public class DetailKenakalanRemajaActivity extends AppCompatActivity {
         tvTitle = findViewById(R.id.tv_title);
         tvDescription = findViewById(R.id.tv_description);
 
+        id = getIntent().getStringExtra(ID);
+
         dataKenakalanRemajaArrayList.addAll(getListDataKenakalan());
 
         System.out.println("cekk"+ dataKenakalanRemajaArrayList.get(0).getName());
+
+        tvTitle.setText(dataKenakalanRemajaArrayList.get(Integer.parseInt(id)).getName());
+        tvDescription.setText(dataKenakalanRemajaArrayList.get(Integer.parseInt(id)).getDescription());
+        Glide.with(this)
+                .asBitmap()
+                .load(dataKenakalanRemajaArrayList.get(Integer.parseInt(id)).getImage())
+                .into(ivImage);
     }
 
     public ArrayList<DataKenakalanRemaja> getListDataKenakalan() {
