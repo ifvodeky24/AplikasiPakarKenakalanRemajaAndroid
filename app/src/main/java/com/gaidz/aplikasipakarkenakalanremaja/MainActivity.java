@@ -7,11 +7,7 @@ import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
-    private Button btnTentang;
-    private Button btnDiagnosaKenakalanRemaja;
-    private Button btnKenakalanRemaja;
-    private Button btnSolusi;
-    private Button btnTanyaPsikologi;
+    private Button btnTentang, btnDiagnosaKenakalanRemaja, btnKenakalanRemaja, btnSolusi, btnTanyaPsikologi;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,8 +26,8 @@ public class MainActivity extends AppCompatActivity {
         });
 
         btnDiagnosaKenakalanRemaja.setOnClickListener(view -> {
-//                Intent intent = new Intent(MainActivity.this, Dkenakalan.class);
-//                startActivity(intent);
+                Intent intent = new Intent(MainActivity.this, DiagnosaActivity.class);
+                startActivity(intent);
         });
 
         btnSolusi.setOnClickListener(view -> {
@@ -45,8 +41,8 @@ public class MainActivity extends AppCompatActivity {
         });
 
         btnTentang.setOnClickListener(view -> {
-//                Intent intent = new Intent(MainActivity.this, TentangActivity2.class);
-//                startActivity(intent);
+                Intent intent = new Intent(MainActivity.this, TentangActivity.class);
+                startActivity(intent);
         });
     }
 }

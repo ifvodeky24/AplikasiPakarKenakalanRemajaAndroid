@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    tools:context=".DiagnosaActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/diagnosa_kenakalan"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/black"/>
+
+        <CheckBox
+            android:id="@+id/cb_mata_merah_pupil_mengecil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/mata_merah_dan_pupil_yang_mengecil_atau_membesar" />
+
+        <CheckBox
+            android:id="@+id/cb_mengalami_perubahan_pola_makan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/mengalami_perubahan_pola_makan_atau_pola_tidur" />
+
+        <CheckBox
+            android:id="@+id/cb_penurunan_berat_badan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/penurunan_berat_badan_atau_penambahan_berat_badan_dalam_kurun_waktu_yang_singkat" />
+
+        <CheckBox
+            android:id="@+id/cb_mengucapkan_kata_yang_membingungkan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/mengucapkan_kata_kata_membingungkan_atau_sulit_dimengerti" />
+
+        <CheckBox
+            android:id="@+id/cb_menjadi_lebih_tertutup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/menjadi_lebih_tertutup_dan_terlihat_seperti_merahasiakan_sesuatu" />
+
+        <CheckBox
+            android:id="@+id/cb_berkurangnya_minat_terhadap_hal_disukai"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/berkurangnya_minat_terhadap_hal_hal_yang_disukai_sebelumnya" />
+
+        <CheckBox
+            android:id="@+id/cb_tidak_memiliki_motivasi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tidak_memiliki_motivasi_tidak_fokus_dan_tampak_lesu" />
+
+        <CheckBox
+            android:id="@+id/cb_menarik_diri_cemas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/menarik_diri_cemas_dan_paranoid" />
+
+        <CheckBox
+            android:id="@+id/cb_sering_bolos_sekolah"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sering_bolos_sekolah_dan_nilai_nilai_pelajarannya_menurun" />
+
+        <CheckBox
+            android:id="@+id/cb_mencuri_atau_menjual_barang_yang_ada"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/mencuri_atau_menjual_barang_barang_yang_ada_untuk_membeli_narkoba" />
+
+        <CheckBox
+            android:id="@+id/cb_takut_tersingkirkan_atau_tidak_dianggap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/takut_tersingkirkan_atau_tidak_dianggap_dalam_pergaulan_dengan_sesama_remaja" />
+
+        <CheckBox
+            android:id="@+id/cb_ingin_menyalurkan_hobi_minat_bakat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/ingin_menyalurkan_hobi_minat_bakat_bermotor" />
+
+        <CheckBox
+            android:id="@+id/cb_ingin_mendapatkan_sensasi_balap_liar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/ingin_mendapatkan_sensasi_balap_liar_sehingga_memacu_adrenalin" />
+
+        <CheckBox
+            android:id="@+id/cb_banyak_melihat_tanyangan_di_televisi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/banyak_melihat_tayangan_di_televisi_sehingga_ingin_meniru" />
+
+        <CheckBox
+            android:id="@+id/cb_lebih_menuruti_ego"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lebih_menuruti_ego_daripada_keselamatan_diri" />
+
+        <CheckBox
+            android:id="@+id/cb_diawali_dengan_rasa_iseng"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/diawali_dengan_rasa_iseng_ingin_mencoba_coba" />
+
+        <CheckBox
+            android:id="@+id/cb_akibat_impitan_ekonomi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/akibat_impitan_ekonomi" />
+
+        <CheckBox
+            android:id="@+id/cb_terbiasa_mendapatkan_uang_banyak"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/terbiasa_mendapatkan_uang_banyak_dengan_jalan_pintas" />
+
+        <CheckBox
+            android:id="@+id/cb_kurangnya_iman_dan_pendidikan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/kurangnya_iman_dan_pendidikan_agama_di_keluarga" />
+
+        <CheckBox
+            android:id="@+id/cb_tidak_mendapatkan_pekerjaan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tidak_mendapatkan_pekerjaan_sehingga_melakukan_pencurian_untuk_memenuhi_kebutuhan" />
+
+        <CheckBox
+            android:id="@+id/cb_adanya_kesempatan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/adanya_kesempatan" />
+
+        <CheckBox
+            android:id="@+id/cb_memiliki_rasa_ingin_tahu_besar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/memiliki_rasa_ingin_tahu_yang_besar" />
+
+        <CheckBox
+            android:id="@+id/cb_tidak_mendapatkan_pendidikan_kesehatan_reproduksi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tidak_mendapatkan_pendidikan_kesehatan_reproduksi" />
+
+        <CheckBox
+            android:id="@+id/cb_kurang_tanggapnya_keluarga_dan_guru"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/kurang_tanggapnya_keluarga_dan_guru_dalam_menanggapi_masalah_seksualitas" />
+
+        <CheckBox
+            android:id="@+id/cb_kurangnya_rasa_takut_kepada_allah"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/kurangnya_rasa_takut_kepada_allah_atau_kurangnya_iman_pada_diri_mereka" />
+
+        <CheckBox
+            android:id="@+id/cb_gigi_kuning_karena_nikotin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/gigi_kuning_karena_nikotin" />
+
+        <CheckBox
+            android:id="@+id/cb_kuku_kotor_karena_nikotin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/kuku_kotor_karena_nikotin" />
+
+        <CheckBox
+            android:id="@+id/cb_mata_pedih"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/mata_pedih" />
+
+        <CheckBox
+            android:id="@+id/cb_sering_batuk_batuk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sering_batuk_batuk" />
+
+        <CheckBox
+            android:id="@+id/cb_mulut_dan_nafas_bau_rokok"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/mulut_dan_nafas_bau_rokok" />
+
+        <CheckBox
+            android:id="@+id/cb_tidak_peka_terhadap_perasaan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tidak_peka_terhadap_perasaan_orang_lain" />
+
+        <CheckBox
+            android:id="@+id/cb_memiliki_perasaan_rendah_diri"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/memiliki_perasaan_rendah_diri_yang_kuat" />
+
+        <CheckBox
+            android:id="@+id/cb_emosi_tidak_stabil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/emosi_yang_tidak_stabil" />
+
+        <CheckBox
+            android:id="@+id/cb_mudah_frustasi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/mudah_frustasi" />
+
+        <CheckBox
+            android:id="@+id/cb_rumah_tangga_penuh_kekerasan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/rumah_tangga_penuh_kekerasan" />
+
+        <CheckBox
+            android:id="@+id/cb_orang_tua_posesif"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/orang_tua_terlalu_posesif_melindungi_anaknya" />
+
+        <CheckBox
+            android:id="@+id/cb_mempunyai_hobi_kebutan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/mempunyai_hobi_yang_sama_yaitu_kebut_kebutan_di_jalan" />
+
+        <CheckBox
+            android:id="@+id/cb_kurang_harmonisnya_hubungan_individu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/kurang_harmonisnya_hubungan_individu_remaja_dengan_lingkungan_sekitarnya" />
+
+        <CheckBox
+            android:id="@+id/cb_orang_tua_tidak_dapat_membangun_komunikasi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/orang_tua_tidak_dapat_membangun_komunikasi_kepada_anak_dengan_baik" />
+
+        <CheckBox
+            android:id="@+id/cb_terbiasa_menggunakan_kekerasan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/terbiasa_menggunakan_kekerasan_untuk_membangun_identitas_diri" />
+
+        <CheckBox
+            android:id="@+id/cb_sering_membolos_sekolah"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sering_membolos_sekolah" />
+
+        <CheckBox
+            android:id="@+id/cb_ketergantungan_kepada_teman_sebaya"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/ketergantungan_kepada_teman_sebaya_yang_tinggi" />
+
+        <CheckBox
+            android:id="@+id/cb_sering_bersama_teman_sebaya_keluar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sering_bersama_teman_sebaya_keluar_rumah" />
+
+        <Button
+            android:id="@+id/btn_diagnosa"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="12dp"
+            android:text="@string/diagnosa" />
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
