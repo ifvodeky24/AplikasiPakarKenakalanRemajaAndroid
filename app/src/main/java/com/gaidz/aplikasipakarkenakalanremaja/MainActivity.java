@@ -7,17 +7,17 @@ import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
-    private Button btnTentang, btnDiagnosaKenakalanRemaja, btnKenakalanRemaja, btnSolusi, btnTanyaPsikologi;
+    private Button btnTentang, btnDiagnosaKenakalanRemaja, btnKenakalanRemaja, btnBantuan;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        setTitle("Aplikasi Pakar Kenakalan Remaja");
 
         btnKenakalanRemaja = findViewById(R.id.btn_kenakalan_remaja);
         btnDiagnosaKenakalanRemaja = findViewById(R.id.btn_diagnosa_kenakalan);
-        btnSolusi = findViewById(R.id.btn_solusi);
-        btnTanyaPsikologi = findViewById(R.id.btn_tanya_psikologi);
+        btnBantuan = findViewById(R.id.btn_bantuan);
         btnTentang = findViewById(R.id.btn_tentang);
 
         btnKenakalanRemaja.setOnClickListener(view -> {
@@ -26,23 +26,18 @@ public class MainActivity extends AppCompatActivity {
         });
 
         btnDiagnosaKenakalanRemaja.setOnClickListener(view -> {
-                Intent intent = new Intent(MainActivity.this, DiagnosaActivity.class);
-                startActivity(intent);
+            Intent intent = new Intent(MainActivity.this, DiagnosaActivity.class);
+            startActivity(intent);
         });
 
-        btnSolusi.setOnClickListener(view -> {
-//                Intent intent = new Intent(MainActivity.this, SolusiActivity2.class);
-//                startActivity(intent);
-        });
-
-        btnTanyaPsikologi.setOnClickListener(view -> {
-//                Intent intent = new Intent(MainActivity.this, KenakalanRemaja.class);
-//                startActivity(intent);
+        btnBantuan.setOnClickListener(view -> {
+            Intent intent = new Intent(MainActivity.this, BantuanActivity.class);
+            startActivity(intent);
         });
 
         btnTentang.setOnClickListener(view -> {
-                Intent intent = new Intent(MainActivity.this, TentangActivity.class);
-                startActivity(intent);
+            Intent intent = new Intent(MainActivity.this, TentangActivity.class);
+            startActivity(intent);
         });
     }
 }

@@ -21,6 +21,7 @@ public class KenakalanRemajaActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_kenakalan_remaja);
+        setTitle("Kenakalan Remaja");
 
         btnNarkoba = findViewById(R.id.btn_narkoba);
         btnBalapLiar = findViewById(R.id.btn_balap_liar);

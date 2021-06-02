@@ -31,6 +31,7 @@ public class DiagnosaActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_diagnosa);
+        setTitle("Diagnosa");
 
         btnDiagnosa = findViewById(R.id.btn_diagnosa);
         cbMataMerahPupilMengecil = findViewById(R.id.cb_mata_merah_pupil_mengecil);
@@ -78,6 +79,7 @@ public class DiagnosaActivity extends AppCompatActivity {
         cbSeringBersamaTemanSebayaKeluar = findViewById(R.id.cb_sering_bersama_teman_sebaya_keluar);
 
         btnDiagnosa.setOnClickListener(v -> {
+
             Intent intent = new Intent(this, HasilDiagnosaActivity.class);
 //            intent.putExtra(DetailKenakalanRemajaActivity.ID, "0");
             startActivity(intent);

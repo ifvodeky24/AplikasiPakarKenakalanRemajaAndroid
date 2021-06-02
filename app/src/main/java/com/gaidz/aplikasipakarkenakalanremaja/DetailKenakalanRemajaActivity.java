@@ -25,6 +25,7 @@ public class DetailKenakalanRemajaActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail_kenakalan_remaja);
+        setTitle("Detail Kenakalan Remaja");
 
         ivImage = findViewById(R.id.iv_image);
         tvTitle = findViewById(R.id.tv_title);

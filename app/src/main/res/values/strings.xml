@@ -65,6 +65,7 @@
     <string name="diagnosa">Diagnosa</string>
     <string name="tentang_pengembang">Tentang Pengembang</string>
     <string name="hasil_diagnosa">Hasil Diagnosa</string>
+    <string name="bantuan">Bantuan</string>
 
     <string-array name="data_id">
         <item>0</item>
