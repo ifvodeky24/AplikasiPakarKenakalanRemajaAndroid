@@ -1,3 +1,6 @@
+
+
+
 package com.gaidz.aplikasipakarkenakalanremaja;
 
 import android.content.Intent;
@@ -7,7 +10,7 @@ import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
-    private Button btnTentang, btnDiagnosaKenakalanRemaja, btnKenakalanRemaja, btnBantuan;
+    private Button btnTentang, btnDiagnosaKenakalanRemaja, btnKenakalanRemaja, btnBantuan, btnSolusi;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
         btnKenakalanRemaja = findViewById(R.id.btn_kenakalan_remaja);
         btnDiagnosaKenakalanRemaja = findViewById(R.id.btn_diagnosa_kenakalan);
         btnBantuan = findViewById(R.id.btn_bantuan);
+        btnSolusi = findViewById(R.id.btn_solusi);
         btnTentang = findViewById(R.id.btn_tentang);
 
         btnKenakalanRemaja.setOnClickListener(view -> {
@@ -32,6 +36,11 @@ public class MainActivity extends AppCompatActivity {
 
         btnBantuan.setOnClickListener(view -> {
             Intent intent = new Intent(MainActivity.this, BantuanActivity.class);
+            startActivity(intent);
+        });
+
+        btnSolusi.setOnClickListener(view -> {
+            Intent intent = new Intent(MainActivity.this, SolusiActivity.class);
             startActivity(intent);
         });
 

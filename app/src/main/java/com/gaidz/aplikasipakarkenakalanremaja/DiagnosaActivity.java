@@ -1,12 +1,14 @@
 package com.gaidz.aplikasipakarkenakalanremaja;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
+import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class DiagnosaActivity extends AppCompatActivity {
 
@@ -80,9 +82,33 @@ public class DiagnosaActivity extends AppCompatActivity {
 
         btnDiagnosa.setOnClickListener(v -> {
 
-            Intent intent = new Intent(this, HasilDiagnosaActivity.class);
+            if (cbMataMerahPupilMengecil.isChecked() && cbMengalamiPerubahanPolaMakan.isChecked() && cbPenurunanBeratBadan.isChecked() && cbMengucapkanKataMembingungkan.isChecked() && cbMenjadiLebihTertutup.isChecked()
+                    && cbBerkurangnyaMinatTerhadapHalDisukai.isChecked() && cbTidakMemilikiMotivasi.isChecked() && cbMenarikDiriCemas.isChecked() && cbSeringBolosSekolah.isChecked() && cbMencuriAtauMenjualBarangYangAda.isChecked()) {
+                Toast.makeText(this, "Narkoba", Toast.LENGTH_LONG).show();
+                Intent intent = new Intent(this, HasilDiagnosaActivity.class);
 //            intent.putExtra(DetailKenakalanRemajaActivity.ID, "0");
-            startActivity(intent);
+                startActivity(intent);
+            } else if (cbTakutTersingkirkanAtauTidakDianggap.isChecked() && cbInginMenyalurkanHobiMinatBakat.isChecked() && cbInginMendapatkanSensasiBalapLiar.isChecked() && cbBanyakMelihatTanyanganDiTelevisi.isChecked()
+                    && cbLebihMenurutiEgo.isChecked() && cbDiawaliDenganRasaIseng.isChecked()) {
+
+            } else if (cbAkibatImpitanEkonomi.isChecked() && cbTerbiasaMendapatkanUangBanyak.isChecked() && cbKurangnyaImanDanPendidikan.isChecked() && cbTidakMendapatkanPekerjaan.isChecked() && cbAdanyaKesempatan.isChecked()) {
+
+            } else if (cbMemilikiRasaInginTahuBesar.isChecked() && cbTidakMendapatkanPendidikanKesehatanReproduksi.isChecked() && cbKurangTanggapnyaKeluargaDanGuru.isChecked() && cbKurangnyaRasaTakutKepadaAllah.isChecked()
+                    && cbAdanyaKesempatan.isChecked()) {
+
+            } else if (cbGigiKuningKarenaNikotin.isChecked() && cbKukuKotorKarenaNikotin.isChecked() && cbMataPedih.isChecked() && cbSeringBatukBatuk.isChecked() && cbMulutDanNafasBauRokok.isChecked()) {
+
+            } else if (cbTidakPekaTerhadapPerasaan.isChecked() && cbMemilikiPerasaanRendahDiri.isChecked() && cbEmosiTidakStabil.isChecked() && cbMudahFrustasi.isChecked() && cbRumahTanggaPenuhKekerasan.isChecked()
+                    && cbOrangTuaPosesif.isChecked()) {
+
+            } else if (cbMempunyaiHobiKebutan.isChecked() && cbKurangHarmonisnyaHubunganIndividu.isChecked() && cbOrangTuaTidakDapatMembangunKomunikasi.isChecked() && cbTerbiasaMenggunakanKekerasan.isChecked() && cbSeringMembolosSekolah.isChecked()
+                    && cbKetergantunganKepadaTemanSebaya.isChecked() && cbSeringBersamaTemanSebayaKeluar.isChecked()) {
+
+            }
         });
+    }
+
+    public void onCheckboxClicked(View view) {
+
     }
 }
