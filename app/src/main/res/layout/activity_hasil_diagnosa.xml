@@ -16,7 +16,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/hasil_diagnosa"
-            android:textSize="22sp"
+            android:textSize="20sp"
+            android:fontFamily="@font/kg_red_hands"
             android:textStyle="bold"
             android:layout_marginBottom="16dp"
             android:layout_gravity="center_horizontal"
@@ -25,35 +26,35 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Narkoba"
-            android:textSize="20sp"
+            android:text="Anda didiagnosis mengalami kenakalan remaja jenis"
+            android:layout_gravity="center_horizontal"
+            android:textSize="18sp"
+            android:textAlignment="center"
+            android:layout_marginTop="40dp"
             android:layout_marginBottom="8dp"
             android:textColor="@color/black"
             android:textStyle="bold"/>
 
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:scaleType="fitXY"
-            android:src="@drawable/ic_narkoba"/>
-
-        <TextView
-            android:id="@+id/tv_description"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="12dp"
-            android:layout_marginEnd="16dp"
-            android:text="Ciri ciri remaja yang memakai narkoba:\n1	Mata merah dan pupil yang mengecil atau membesar\n2	Mengalami perubahan pola makan atau pola tidur, yang menyebabkan penurunan berat badan atau penambahan berat badan dalam kurun waktu yang singkat.\n3 Mengucapkan kata-kata yang membingungkan atau sulit untuk dimengerti.\n4	Menjadi lebih tertutup, dan terlihat seperti merahasiakan sesuatu.\n5 Berkurangnya minat terhadap hal-hal yang disukai sebelumnya.\n6 Tidak memiliki motivasi, tidak fokus dan tampak lesu.\n7 Menarik diri, cemas, dan paranoid\n8 Sering bolos sekolah dan nilai-nilai pelajarannya\n9 Mencuri atau menjual barang-barang yang ada, untuk membeli"
-            android:textSize="20sp" />
-
         <Button
-            android:id="@+id/btn_solusi"
+            android:id="@+id/btn_tujuan"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginTop="12dp"
             android:text="@string/solusi" />
+
+        <TextView
+            android:id="@+id/tv_hasil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tidak ada jenis kenakalan remaja sesuai dengan gejala yang terpilih"
+            android:layout_gravity="center_horizontal"
+            android:textSize="18sp"
+            android:textAlignment="center"
+            android:layout_marginTop="40dp"
+            android:visibility="gone"
+            android:layout_marginBottom="8dp"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="bold"/>
     </LinearLayout>
 
 </androidx.core.widget.NestedScrollView>

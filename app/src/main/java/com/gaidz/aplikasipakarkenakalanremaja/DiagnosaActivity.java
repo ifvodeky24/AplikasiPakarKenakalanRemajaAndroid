@@ -1,9 +1,11 @@
 package com.gaidz.aplikasipakarkenakalanremaja;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -70,30 +72,50 @@ public class DiagnosaActivity extends AppCompatActivity {
         cbTidakMemilikiEmpati = findViewById(R.id.cb_tidak_memiliki_empati);
 
         btnDiagnosa.setOnClickListener(v -> {
-
-//            if (cbMataMerahPupilMengecil.isChecked() && cbMengalamiPerubahanPolaMakan.isChecked() && cbPenurunanBeratBadan.isChecked() && cbMengucapkanKataMembingungkan.isChecked() && cbMenjadiLebihTertutup.isChecked()
-//                    && cbBerkurangnyaMinatTerhadapHalDisukai.isChecked() && cbTidakMemilikiMotivasi.isChecked() && cbMenarikDiriCemas.isChecked() && cbSeringBolosSekolah.isChecked() && cbMencuriAtauMenjualBarangYangAda.isChecked()) {
-//                Toast.makeText(this, "Narkoba", Toast.LENGTH_LONG).show();
-//                Intent intent = new Intent(this, HasilDiagnosaActivity.class);
-////            intent.putExtra(DetailKenakalanRemajaActivity.ID, "0");
-//                startActivity(intent);
-//            } else if (cbTakutTersingkirkanAtauTidakDianggap.isChecked() && cbInginMenyalurkanHobiMinatBakat.isChecked() && cbInginMendapatkanSensasiBalapLiar.isChecked() && cbBanyakMelihatTanyanganDiTelevisi.isChecked()
-//                    && cbLebihMenurutiEgo.isChecked() && cbDiawaliDenganRasaIseng.isChecked()) {
-//
-//            } else if (cbAkibatImpitanEkonomi.isChecked() && cbTerbiasaMendapatkanUangBanyak.isChecked() && cbKurangnyaImanDanPendidikan.isChecked() && cbTidakMendapatkanPekerjaan.isChecked() && cbAdanyaKesempatan.isChecked()) {
-//
-//            } else if (cbMemilikiRasaInginTahuBesar.isChecked() && cbTidakMendapatkanPendidikanKesehatanReproduksi.isChecked() && cbKurangTanggapnyaKeluargaDanGuru.isChecked() && cbKurangnyaRasaTakutKepadaAllah.isChecked()
-//                    && cbAdanyaKesempatan.isChecked()) {
-//
-//            } else if (cbGigiKuningKarenaNikotin.isChecked() && cbKukuKotorKarenaNikotin.isChecked() && cbMataPedih.isChecked() && cbSeringBatukBatuk.isChecked() && cbMulutDanNafasBauRokok.isChecked()) {
-//
-//            } else if (cbTidakPekaTerhadapPerasaan.isChecked() && cbMemilikiPerasaanRendahDiri.isChecked() && cbEmosiTidakStabil.isChecked() && cbMudahFrustasi.isChecked() && cbRumahTanggaPenuhKekerasan.isChecked()
-//                    && cbOrangTuaPosesif.isChecked()) {
-//
-//            } else if (cbMempunyaiHobiKebutan.isChecked() && cbKurangHarmonisnyaHubunganIndividu.isChecked() && cbOrangTuaTidakDapatMembangunKomunikasi.isChecked() && cbTerbiasaMenggunakanKekerasan.isChecked() && cbSeringMembolosSekolah.isChecked()
-//                    && cbKetergantunganKepadaTemanSebaya.isChecked() && cbSeringBersamaTemanSebayaKeluar.isChecked()) {
-//
-//            }
+            if (cbMataMerahPupilMengecil.isChecked() && cbMengucapkanKataMembingungkan.isChecked() && cbMenjadiLebihTertutup.isChecked() && cbTidakMemilikiMotivasi.isChecked() && cbMencuriAtauMenjualBarangYangAda.isChecked()) {
+                Toast.makeText(this, "Narkoba", Toast.LENGTH_LONG).show();
+                Intent intent = new Intent(this, HasilDiagnosaActivity.class);
+                intent.putExtra(HasilDiagnosaActivity.CODE, "0");
+                startActivity(intent);
+            } else if (cbTakutTersingkirkan.isChecked() && cbInginMenyalurkanHobi.isChecked() && cbMeniruTayanganTelevisi.isChecked() && cbLebihMenurutiEgo.isChecked()) {
+                Intent intent = new Intent(this, HasilDiagnosaActivity.class);
+                intent.putExtra(HasilDiagnosaActivity.CODE, "1");
+                startActivity(intent);
+            } else if (cbAkibatImpitanEkonomi.isChecked() && cbTerbiasaMendapatkanUangBanyak.isChecked() && cbKurangnyaImanDanPendidikan.isChecked() && cbTidakMendapatkanPekerjaan.isChecked()) {
+                Intent intent = new Intent(this, HasilDiagnosaActivity.class);
+                intent.putExtra(HasilDiagnosaActivity.CODE, "2");
+                startActivity(intent);
+            } else if (cbMempunyaiRasaInginTahuBesar.isChecked() && cbKurangnyaRasaTakutKepadaAllah.isChecked() && cbKurangTanggapnyaKeluargaDanGuru.isChecked() && cbKurangnyaRasaTakutKepadaAllah.isChecked()
+                    && cbAdanyaKesempatan.isChecked()) {
+                Intent intent = new Intent(this, HasilDiagnosaActivity.class);
+                intent.putExtra(HasilDiagnosaActivity.CODE, "3");
+                startActivity(intent);
+            } else if (cbGigiKuningKarenaNikotin.isChecked() && cbSeringBatukBatuk.isChecked() && cbMulutDanNafasBauRokok.isChecked() && cbLidahTerasaGetir.isChecked()) {
+                Intent intent = new Intent(this, HasilDiagnosaActivity.class);
+                intent.putExtra(HasilDiagnosaActivity.CODE, "4");
+                startActivity(intent);
+            } else if (cbTidakPekaTerhadapPerasaan.isChecked() && cbMemilikiPerasaanRendahDiri.isChecked() && cbEmosilabil.isChecked() && cbRumahTanggaPenuhKekerasan.isChecked()) {
+                Intent intent = new Intent(this, HasilDiagnosaActivity.class);
+                intent.putExtra(HasilDiagnosaActivity.CODE, "5");
+                startActivity(intent);
+            } else if (cbMempunyaiHobiKebutan.isChecked() && cbKurangHarmonisnyaHubunganDenganLingkungan.isChecked() && cbTerbiasaMenggunakanKekerasan.isChecked() && cbSeringMembolosSekolah.isChecked()) {
+                Intent intent = new Intent(this, HasilDiagnosaActivity.class);
+                intent.putExtra(HasilDiagnosaActivity.CODE, "6");
+                startActivity(intent);
+            } else if (cbSuasanaHatiSelaluBerubah.isChecked() && cbMataTerlihatSayuDanMerah.isChecked() && cbTidakLagiTertarikMenyalurkanHobi.isChecked()
+                    && cbMenjadiMalasDalamPenampilan.isChecked() && cbBertemanDenganOrangDicurigai.isChecked()) {
+                Intent intent = new Intent(this, HasilDiagnosaActivity.class);
+                intent.putExtra(HasilDiagnosaActivity.CODE, "7");
+                startActivity(intent);
+            } else if (cbSelaluInginBerkuasa.isChecked() && cbMudahMarahDanTidakMerasaBersalah.isChecked() && cbTidakMemilikiEmpati.isChecked()) {
+                Intent intent = new Intent(this, HasilDiagnosaActivity.class);
+                intent.putExtra(HasilDiagnosaActivity.CODE, "8");
+                startActivity(intent);
+            } else {
+                Intent intent = new Intent(this, HasilDiagnosaActivity.class);
+                intent.putExtra(HasilDiagnosaActivity.CODE, "9");
+                startActivity(intent);
+            }
         });
     }
 
