@@ -16,7 +16,7 @@ public class DetailKenakalanRemajaActivity extends AppCompatActivity {
     private TextView tvTitle;
     private TextView tvDescription;
 
-    private ArrayList<DataKenakalanRemaja> dataKenakalanRemajaArrayList = new ArrayList<>();;
+    private ArrayList<DataKenakalanRemaja> dataKenakalanRemajaArrayList = new ArrayList<>();
 
     public static final String ID = "id";
     private String id;
