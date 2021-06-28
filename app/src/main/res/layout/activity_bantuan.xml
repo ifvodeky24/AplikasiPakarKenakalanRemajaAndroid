@@ -19,7 +19,7 @@
             android:layout_marginBottom="8dp"
             android:text="Berikut adalah fungsi dari setiap menu yang terdapat pada aplikasi"
             android:textColor="@color/black"
-            android:textSize="16sp" />
+            android:textSize="17sp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -55,7 +55,7 @@
                 android:layout_marginStart="8dp"
                 android:text="Menu kenakalan remaja merupakan menu yang menampilkan data tentang jenis-jenis kenakalan pada remaja"
                 android:textColor="@color/black"
-                android:textSize="15sp" />
+                android:textSize="17sp" />
         </LinearLayout>
 
         <LinearLayout
@@ -93,7 +93,7 @@
                 android:layout_marginStart="8dp"
                 android:text="Menu kenakalan remaja merupakan menu yang menampilkan data tentang jenis-jenis kenakalan pada remaja"
                 android:textColor="@color/black"
-                android:textSize="15sp" />
+                android:textSize="17sp" />
         </LinearLayout>
 
         <LinearLayout
@@ -131,7 +131,7 @@
                 android:layout_marginStart="8dp"
                 android:text="Menu kenakalan remaja merupakan menu yang menampilkan data tentang jenis-jenis kenakalan pada remaja"
                 android:textColor="@color/black"
-                android:textSize="15sp" />
+                android:textSize="17sp" />
         </LinearLayout>
 
         <LinearLayout
@@ -169,7 +169,7 @@
                 android:layout_marginStart="8dp"
                 android:text="Menu kenakalan remaja merupakan menu yang menampilkan data tentang jenis-jenis kenakalan pada remaja"
                 android:textColor="@color/black"
-                android:textSize="15sp" />
+                android:textSize="17sp" />
         </LinearLayout>
     </LinearLayout>
 

@@ -104,6 +104,19 @@
         <item>Ciri ciri remaja yang terlibat Bullying:\n1. Selalu ingin berkuasa\n2. Bersikap egois.\n3. Mudah marah.\n4. Tidak merasa bersalah.\n5. Tidak empati dan rasa iba.</item>
     </string-array>
 
+    <string-array name="data_pengertian">
+    <item>Secara umum Narkoba merupakan singkatan dari Narkotika dan obat atau bahan berbahaya (yang dikenal dengan istilah psikotropika). Dalam hal ini, pengertian narkoba adalah istilah yang digunakan oleh masyarakat dan aparat penegak hukum, untuk bahan atau obat yang masuk kategori berbahaya atau dilarang untuk digunakan, diproduksi, dipasok, diperjualbelikan, diedarkan, dan sebagainya di luar ketentuan hukum.</item>
+    <item>Balapan liar merupakan salah satu kenakalan remaja yang menjurus pada tindakan kriminal. Dimana balapan liar ini adalah kegiatan beradu cepat kendaraan, baik sepeda motor maupun mobil, yang dilakukan diatas lintasan umum. Artinya kegiatan ini sama sekali tida</item>
+    <item>Pengertian pencurian adalah pengembilan properti milik orang lain secara tidak sah tanpa seizin pemilik. Pelaku tindak pidana pencurian ini biasa disebut dengan pencuri dan tindakannya oleh masyarakat sering dikenal dengan istilah mencuri</item>
+    <item>Pengertian seks kerap hanya mengacu pada aktivitas biologis yang berhubungandengan alat kelamin (genitalia), meski sebenarnya seks sebagai keadaan anatomidan biologis, sebenarnya hanyalah pengertian sempitdari yang dimaksud denganseksualitas.</item>
+    <item>Rokok adalah salah satu zat adiktif yang bila digunakan mengakibatkan bahaya bagi kesehatan individu dan masyarakat. Kemudian ada juga yang menyebutkan bahwa rokok adalah hasil olahan tembakau terbungkus termasuk cerutu atau bahan lainya yang dihasilkan dari tanamam Nicotiana Tabacum, Nicotiana Rustica dan spesies lainnya atau sintesisnya yang mengandung nikotin dan tar dengan atau tanpa bahan tambahan. </item>
+    <item>Perkelahian antar remaja atau pelajar adalah suatu tindakan kekerasan yang dilakukan oleh suatu kelompok dengan kelompok yag lain dimana mereka berusaha untuk menyingkirkan pihak lawan dengan membuat mereka tidak berdaya.</item>
+    <item>Geng berarti sebuah kelompok atau gerombolan remaja yang dilatarbelakangi oleh persamaan latar sosial, sekolah, daerah, dan sebagainya. Pelakunya dikenal dengan sebutan gangster. G</item>
+    <item>Minuman keras adalah minuman yang dibuat oleh manusia melalui beberapa proses sampai mengandung sebuah alkohol mulai kadar rendah sampai tinggi yang bisa memabukkan para penggunanya, dari dalam negeri sampai dari luar negeri.</item>
+    <item>Bullying adalah penggunaan kekerasan, ancaman, atau paksaan untuk menyalahgunakan atau mengintimidasi orang lain.</item>
+</string-array>
+
+
     <string-array name="data_image">
         <item>https://asset.kompas.com/crops/o1Fov9A3hk3-e0oeONzVe3rQtYw=/0x0:0x0/750x500/data/photo/2020/01/13/5e1c3c17cabda.jpg</item>
         <item>https://imgx.gridoto.com/crop/0x0:0x0/700x465/photo/2019/05/15/1561336652.jpg</item>

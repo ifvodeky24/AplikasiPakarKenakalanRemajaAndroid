@@ -9,12 +9,14 @@ public class DataKenakalanRemaja implements Parcelable {
     private String image;
     private String name;
     private String description;
+    private String definition;
 
     protected DataKenakalanRemaja(Parcel in) {
         id = in.readString();
         image = in.readString();
         name = in.readString();
         description = in.readString();
+        definition = in.readString();
     }
 
     public static final Creator<DataKenakalanRemaja> CREATOR = new Creator<DataKenakalanRemaja>() {
@@ -65,6 +67,14 @@ public class DataKenakalanRemaja implements Parcelable {
         this.description = description;
     }
 
+    public String getDefinition() {
+        return definition;
+    }
+
+    public void setDefinition(String definition) {
+        this.definition = definition;
+    }
+
     @Override
     public int describeContents() {
         return 0;
@@ -76,5 +86,6 @@ public class DataKenakalanRemaja implements Parcelable {
         parcel.writeString(image);
         parcel.writeString(name);
         parcel.writeString(description);
+        parcel.writeString(definition);
     }
 }

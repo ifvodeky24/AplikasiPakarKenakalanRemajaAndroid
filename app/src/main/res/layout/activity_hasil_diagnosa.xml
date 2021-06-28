@@ -28,7 +28,7 @@
             android:layout_height="wrap_content"
             android:text="Anda didiagnosis mengalami kenakalan remaja jenis"
             android:layout_gravity="center_horizontal"
-            android:textSize="18sp"
+            android:textSize="17sp"
             android:textAlignment="center"
             android:layout_marginTop="40dp"
             android:layout_marginBottom="8dp"

@@ -1,8 +1,8 @@
 package com.gaidz.aplikasipakarkenakalanremaja;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
+
 
 public class BantuanActivity extends AppCompatActivity {
 
@@ -11,5 +11,6 @@ public class BantuanActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bantuan);
         setTitle("Bantuan");
+
     }
 }
