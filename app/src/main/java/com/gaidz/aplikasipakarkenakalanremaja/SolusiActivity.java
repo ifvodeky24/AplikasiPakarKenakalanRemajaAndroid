@@ -16,15 +16,15 @@ public class  SolusiActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_solusi);
 
-        YouTubePlayerView youTubePlayerView = new YouTubePlayerView(this);
-        getLifecycle().addObserver(youTubePlayerView);
-
-        youTubePlayerView.addYouTubePlayerListener(new AbstractYouTubePlayerListener() {
-            @Override
-            public void onReady(@NonNull YouTubePlayer youTubePlayer) {
-                String videoId = "NH-Zng9uP9E";
-                youTubePlayer.cueVideo(videoId, 1);
-            }
-        });
+//        YouTubePlayerView youTubePlayerView = new YouTubePlayerView(this);
+//        getLifecycle().addObserver(youTubePlayerView);
+//
+//        youTubePlayerView.addYouTubePlayerListener(new AbstractYouTubePlayerListener() {
+//            @Override
+//            public void onReady(@NonNull YouTubePlayer youTubePlayer) {
+//                String videoId = "NH-Zng9uP9E";
+//                youTubePlayer.cueVideo(videoId, 1);
+//            }
+//        });
     }
 }

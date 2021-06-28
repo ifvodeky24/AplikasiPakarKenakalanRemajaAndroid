@@ -15,6 +15,7 @@
             android:id="@+id/youtube_player_view"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            app:videoId="NH-Zng9uP9E"
             app:autoPlay="false"
             app:showFullScreenButton="false" />
 
